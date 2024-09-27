@@ -37,6 +37,7 @@ jobs:
         with:
           workflow: other-workflow.yaml
           token: ${{ secrets.GITHUB_TOKEN }}
+          ref: ${{ github.ref }}
           inputs: |
             {
               "checks": "true",
