@@ -1,0 +1,16 @@
+name: "[R] Library 7"
+
+on:
+  workflow_call:
+    inputs: {}
+
+jobs:
+  bundle:
+    name: Bundle
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fake bundle
+        shell: bash
+        run: echo "Bundling..."

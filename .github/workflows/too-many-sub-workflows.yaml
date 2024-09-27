@@ -9,3 +9,83 @@ jobs:
     name: Library 1
     uses: ./.github/workflows/library-1.yaml
     secrets: inherit
+  library-2:
+    name: Library 2
+    uses: ./.github/workflows/library-2.yaml
+    secrets: inherit
+  library-3:
+    name: Library 3
+    uses: ./.github/workflows/library-3.yaml
+    secrets: inherit
+  library-4:
+    name: Library 4
+    uses: ./.github/workflows/library-4.yaml
+    secrets: inherit
+  library-5:
+    name: Library 5
+    uses: ./.github/workflows/library-5.yaml
+    secrets: inherit
+  library-6:
+    name: Library 6
+    uses: ./.github/workflows/library-6.yaml
+    secrets: inherit
+  library-7:
+    name: Library 7
+    uses: ./.github/workflows/library-7.yaml
+    secrets: inherit
+  library-8:
+    name: Library 8
+    uses: ./.github/workflows/library-8.yaml
+    secrets: inherit
+  library-9:
+    name: Library 9
+    uses: ./.github/workflows/library-9.yaml
+    secrets: inherit
+  library-10:
+    name: Library 10
+    uses: ./.github/workflows/library-10.yaml
+    secrets: inherit
+  library-11:
+    name: Library 11
+    uses: ./.github/workflows/library-11.yaml
+    secrets: inherit
+  library-12:
+    name: Library 12
+    uses: ./.github/workflows/library-12.yaml
+    secrets: inherit
+  library-13:
+    name: Library 13
+    uses: ./.github/workflows/library-13.yaml
+    secrets: inherit
+  library-14:
+    name: Library 14
+    uses: ./.github/workflows/library-14.yaml
+    secrets: inherit
+  library-15:
+    name: Library 15
+    uses: ./.github/workflows/library-15.yaml
+    secrets: inherit
+  library-16:
+    name: Library 16
+    uses: ./.github/workflows/library-16.yaml
+    secrets: inherit
+  library-17:
+    name: Library 17
+    uses: ./.github/workflows/library-17.yaml
+    secrets: inherit
+  library-18:
+    name: Library 18
+    uses: ./.github/workflows/library-18.yaml
+    secrets: inherit
+  library-19:
+    name: Library 19
+    uses: ./.github/workflows/library-19.yaml
+    secrets: inherit
+  library-20:
+    name: Library 20
+    uses: ./.github/workflows/library-20.yaml
+    secrets: inherit
+  library-21:
+    name: Library 21
+    uses: ./.github/workflows/library-21.yaml
+    secrets: inherit
