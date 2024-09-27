@@ -1,0 +1,11 @@
+name: Too many workflows
+
+on:
+  workflow_dispatch:
+    inputs: {}
+
+jobs:
+  library-1:
+    name: Library 1
+    uses: ./github/workflows/library-1.yaml
+    secrets: inherit
