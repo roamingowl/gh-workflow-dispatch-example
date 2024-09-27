@@ -1,4 +1,4 @@
-name: "Library 1"
+name: "[sub] Library 1"
 
 on:
   workflow_call:
