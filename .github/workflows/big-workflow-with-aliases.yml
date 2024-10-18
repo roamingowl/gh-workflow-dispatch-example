@@ -6053,3 +6053,11 @@ jobs:
     name: Library 1510
     runs-on: ubuntu-latest
     steps: *a1
+  library-1511:
+    name: Library 1511
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-1512:
+    name: Library 1512
+    runs-on: ubuntu-latest
+    steps: *a1
