@@ -1,0 +1,16 @@
+{
+  "name": "gh-workflow-dispatch-example",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "When using reusable workflows in GitHub Actions, there is currenlty a limit of [max. 20 unique workflows](https://docs.github.com/en/actions/sharing-automations/reusing-workflows#limitations) you can use. If you add more than 20 workflows, you will get an error message like this:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate-big-wf": "node src/generate-big-workflow.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "yaml": "^2.6.0"
+  }
+}

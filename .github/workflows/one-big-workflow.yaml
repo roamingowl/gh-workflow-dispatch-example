@@ -1,0 +1,21 @@
+name: One big workflow
+
+on:
+  workflow_dispatch:
+    inputs: {}
+
+jobs:
+  library-1:
+    name: Library 1
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fake test
+        shell: bash
+        run: echo "Testing..."
+      - name: Fake lint
+        shell: bash
+        run: echo "Linting..."
+      - name: Fake bundle
+        shell: bash
+        run: echo "Bundling..."
