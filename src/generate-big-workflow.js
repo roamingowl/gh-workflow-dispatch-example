@@ -35,7 +35,7 @@ const jobJSON = {
     ]
 }
 
-for (let i = 1; i <= 2000; i++) {
+for (let i = 1; i <= 1500; i++) {
     workflowJSON.jobs[`library-${i}`] = {name: `Library ${i}`, ...jobJSON};
 }
 
