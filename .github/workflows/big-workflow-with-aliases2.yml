@@ -1,0 +1,215 @@
+name: Big Workflow with Aliases2
+on:
+  workflow_dispatch:
+    inputs: {}
+jobs:
+  library-1:
+    name: Library 1
+    runs-on: ubuntu-latest
+    steps: &a1
+      - uses: actions/checkout@v4
+      - name: Fake test
+        shell: bash
+        run: echo "Testing..."
+      - name: Fake lint
+        shell: bash
+        run: echo "Linting..."
+      - name: Fake bundle
+        shell: bash
+        run: echo "Bundling..."
+  library-2:
+    name: Library 2
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-3:
+    name: Library 3
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-4:
+    name: Library 4
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-5:
+    name: Library 5
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-6:
+    name: Library 6
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-7:
+    name: Library 7
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-8:
+    name: Library 8
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-9:
+    name: Library 9
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-10:
+    name: Library 10
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-11:
+    name: Library 11
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-12:
+    name: Library 12
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-13:
+    name: Library 13
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-14:
+    name: Library 14
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-15:
+    name: Library 15
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-16:
+    name: Library 16
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-17:
+    name: Library 17
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-18:
+    name: Library 18
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-19:
+    name: Library 19
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-20:
+    name: Library 20
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-21:
+    name: Library 21
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-22:
+    name: Library 22
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-23:
+    name: Library 23
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-24:
+    name: Library 24
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-25:
+    name: Library 25
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-26:
+    name: Library 26
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-27:
+    name: Library 27
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-28:
+    name: Library 28
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-29:
+    name: Library 29
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-30:
+    name: Library 30
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-31:
+    name: Library 31
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-32:
+    name: Library 32
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-33:
+    name: Library 33
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-34:
+    name: Library 34
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-35:
+    name: Library 35
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-36:
+    name: Library 36
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-37:
+    name: Library 37
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-38:
+    name: Library 38
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-39:
+    name: Library 39
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-40:
+    name: Library 40
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-41:
+    name: Library 41
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-42:
+    name: Library 42
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-43:
+    name: Library 43
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-44:
+    name: Library 44
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-45:
+    name: Library 45
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-46:
+    name: Library 46
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-47:
+    name: Library 47
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-48:
+    name: Library 48
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-49:
+    name: Library 49
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-50:
+    name: Library 50
+    runs-on: ubuntu-latest
+    steps: *a1
