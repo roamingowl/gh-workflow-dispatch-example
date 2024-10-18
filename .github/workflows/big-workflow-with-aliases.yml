@@ -6077,3 +6077,11 @@ jobs:
     name: Library 1516
     runs-on: ubuntu-latest
     steps: *a1
+  library-1517:
+    name: Library 1517
+    runs-on: ubuntu-latest
+    steps: *a1
+  library-1518:
+    name: Library 1518
+    runs-on: ubuntu-latest
+    steps: *a1
