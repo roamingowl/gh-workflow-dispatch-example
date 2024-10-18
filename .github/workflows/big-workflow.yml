@@ -13,6 +13,7 @@ jobs:
         run: |
           echo "Testing..."
           echo "Testing..."
+          echo "Testing..."
       - name: Fake lint
         shell: bash
         run: echo "Linting..."
