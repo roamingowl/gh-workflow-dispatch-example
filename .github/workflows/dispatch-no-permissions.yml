@@ -1,0 +1,50 @@
+name: Dispatch workflow without permissions
+
+on:
+  workflow_dispatch:
+    inputs: {}
+
+
+jobs:
+  library-1:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: the-actions-org/workflow-dispatch@v4
+        with:
+          workflow: library-1.yaml
+          token: ${{ secrets.GITHUB_TOKEN }}
+          wait-for-completion: true
+          display-workflow-run-url: true
+          inputs: |-
+            {
+              "build": "true",
+              "test": "true"
+            }
+  library-2:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: the-actions-org/workflow-dispatch@v4
+        with:
+          workflow: library-2.yaml
+          token: ${{ secrets.GITHUB_TOKEN }}
+          wait-for-completion: true
+          display-workflow-run-url: true
+          inputs: |-
+            {
+              "build": "true",
+              "test": "true"
+            }
+  library-3:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: the-actions-org/workflow-dispatch@v4
+        with:
+          workflow: library-3.yaml
+          token: ${{ secrets.GITHUB_TOKEN }}
+          wait-for-completion: true
+          display-workflow-run-url: true
+          inputs: |-
+            {
+              "build": "true",
+              "test": "true"
+            }
