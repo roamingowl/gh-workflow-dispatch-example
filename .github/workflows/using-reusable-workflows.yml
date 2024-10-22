@@ -7,13 +7,13 @@ on:
 jobs:
   library-1:
     name: Library 1
-    uses: ./.github/workflows/library-1.yaml
+    uses: ./.github/workflows/reusable-library-1.yaml
     secrets: inherit
   library-2:
     name: Library 2
-    uses: ./.github/workflows/library-2.yaml
+    uses: ./.github/workflows/reusable-library-2.yaml
     secrets: inherit
   library-3:
     name: Library 3
-    uses: ./.github/workflows/library-3.yaml
+    uses: ./.github/workflows/reusable-library-3.yaml
     secrets: inherit
