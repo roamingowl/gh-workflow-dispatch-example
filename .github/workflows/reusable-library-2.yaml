@@ -2,15 +2,36 @@ name: "[R] Library 2"
 
 on:
   workflow_call:
-    inputs: {}
+    inputs:
+      build:
+        required: false
+        type: boolean
+        description: "Whether to build the project"
+        default: true
+      test:
+        required: false
+        type: boolean
+        description: "Whether to test the project"
+        default: true
 
 jobs:
-  bundle:
-    name: Bundle
+  test:
+    name: Test
     runs-on: ubuntu-latest
-
+    if: ${{ inputs.test }}
     steps:
       - uses: actions/checkout@v4
-      - name: Fake bundle
+      - name: Fake test
+
+        shell: bash
+        run: echo "Bundling..."
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    if: ${{ inputs.build }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fake build
         shell: bash
         run: echo "Bundling..."

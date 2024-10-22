@@ -13,17 +13,22 @@ on:
         default: "true"
 
 jobs:
-  bundle:
-    name: Bundle
+  test:
+    name: Test
     runs-on: ubuntu-latest
-
+    if: ${{ inputs.test == 'true' }}
     steps:
       - uses: actions/checkout@v4
       - name: Fake test
-        if: ${{ inputs.test == 'true' }}
         shell: bash
         run: echo "Testing..."
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    if: ${{ inputs.build == 'true' }}
+    steps:
+      - uses: actions/checkout@v4
       - name: Fake build
-        if: ${{ inputs.build == 'true' }}
         shell: bash
         run: echo "Bundling..."
