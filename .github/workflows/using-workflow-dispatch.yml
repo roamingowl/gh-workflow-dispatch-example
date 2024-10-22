@@ -1,0 +1,34 @@
+name: Workflow using workflow_dispatch
+
+on:
+  workflow_dispatch:
+    inputs: {}
+
+jobs:
+  library-1:
+    uses: the-actions-org/workflow-dispatch@v4
+    with:
+      workflow: library-1.yaml
+      inputs: |-
+        {
+          "build": "true",
+          "test": "true"
+        }
+  library-2:
+    uses: the-actions-org/workflow-dispatch@v4
+    with:
+      workflow: library-2.yaml
+      inputs: |-
+        {
+          "build": "true",
+          "test": "true"
+        }
+  library-3:
+    uses: the-actions-org/workflow-dispatch@v4
+    with:
+      workflow: library-3.yaml
+      inputs: |-
+        {
+          "build": "true",
+          "test": "true"
+        }

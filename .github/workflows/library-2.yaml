@@ -1,0 +1,29 @@
+name: "Library 2"
+
+on:
+  workflow_dispatch:
+    inputs:
+      build:
+        description: "Build the library"
+        required: true
+        default: "true"
+      test:
+        description: "Run the tests"
+        required: true
+        default: "true"
+
+jobs:
+  bundle:
+    name: Bundle
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fake test
+        if: ${{ inputs.test == 'true' }}
+        shell: bash
+        run: echo "Testing..."
+      - name: Fake build
+        if: ${{ inputs.build == 'true' }}
+        shell: bash
+        run: echo "Bundling..."
