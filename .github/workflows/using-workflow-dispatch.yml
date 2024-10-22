@@ -6,29 +6,38 @@ on:
 
 jobs:
   library-1:
-    uses: the-actions-org/workflow-dispatch@v4
-    with:
-      workflow: library-1.yaml
-      inputs: |-
-        {
-          "build": "true",
-          "test": "true"
-        }
+    runs-on: ubuntu-latest
+    steps:
+      - uses: the-actions-org/workflow-dispatch@v4
+        with:
+          workflow: library-1.yaml
+          token: ${{ secrets.GITHUB_TOKEN }}
+          inputs: |-
+            {
+              "build": "true",
+              "test": "true"
+            }
   library-2:
-    uses: the-actions-org/workflow-dispatch@v4
-    with:
-      workflow: library-2.yaml
-      inputs: |-
-        {
-          "build": "true",
-          "test": "true"
-        }
+    runs-on: ubuntu-latest
+    steps:
+      - uses: the-actions-org/workflow-dispatch@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          workflow: library-2.yaml
+          inputs: |-
+            {
+              "build": "true",
+              "test": "true"
+            }
   library-3:
-    uses: the-actions-org/workflow-dispatch@v4
-    with:
-      workflow: library-3.yaml
-      inputs: |-
-        {
-          "build": "true",
-          "test": "true"
-        }
+    runs-on: ubuntu-latest
+    steps:
+      - uses: the-actions-org/workflow-dispatch@v4
+        with:
+          workflow: library-3.yaml
+          token: ${{ secrets.GITHUB_TOKEN }}
+          inputs: |-
+            {
+              "build": "true",
+              "test": "true"
+            }
