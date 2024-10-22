@@ -4,6 +4,9 @@ on:
   workflow_dispatch:
     inputs: {}
 
+permissions:
+  contents: write
+
 jobs:
   library-1:
     runs-on: ubuntu-latest
