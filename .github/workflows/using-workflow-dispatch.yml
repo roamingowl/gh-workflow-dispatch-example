@@ -5,7 +5,7 @@ on:
     inputs: {}
 
 permissions:
-  contents: write
+  actions: write
 
 jobs:
   library-1:
