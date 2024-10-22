@@ -12,6 +12,8 @@ jobs:
         with:
           workflow: library-1.yaml
           token: ${{ secrets.GITHUB_TOKEN }}
+          wait-for-completion: true
+          display-workflow-run-url: true
           inputs: |-
             {
               "build": "true",
@@ -22,8 +24,10 @@ jobs:
     steps:
       - uses: the-actions-org/workflow-dispatch@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
           workflow: library-2.yaml
+          token: ${{ secrets.GITHUB_TOKEN }}
+          wait-for-completion: true
+          display-workflow-run-url: true
           inputs: |-
             {
               "build": "true",
@@ -36,6 +40,8 @@ jobs:
         with:
           workflow: library-3.yaml
           token: ${{ secrets.GITHUB_TOKEN }}
+          wait-for-completion: true
+          display-workflow-run-url: true
           inputs: |-
             {
               "build": "true",
