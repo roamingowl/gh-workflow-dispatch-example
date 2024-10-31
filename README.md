@@ -1,5 +1,8 @@
 # GitHub workflow dispatch example
 
+>[!NOTE]
+> This is an example repo to my article [Maximum of twenty unique reusable workflows limit](https://jurajsim.hashnode.dev/maximum-of-twenty-unique-reusable-workflows-limit) on Hashnode
+
 When using reusable workflows in GitHub Actions, there is currenlty a limit of [max. 20 unique workflows](https://docs.github.com/en/actions/sharing-automations/reusing-workflows#limitations) you can use.
 If you add more than 20 workflows, you will get an error message like this:
 
